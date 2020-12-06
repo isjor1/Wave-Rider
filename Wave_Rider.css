@@ -3,4 +3,5 @@ audio {
     box-shadow: 5px 5px 20px rgba(241, 4, 4, 0.4);
     border-radius: 90px;
     transform: scale(1.05);
+    height: 25px;
   }
