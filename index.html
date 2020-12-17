@@ -2,17 +2,57 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>Wave Rider v1</title>
         <link rel="stylesheet" href="Wave_Rider.css">
     </head>
     <body>
     <div>
         <h1>Wave Rider v1</h1> 
+        <audio id="sound1" src="applause.mp3"></audio>
+        <button onclick="document.getElementById('sound1').play()">Applause</button>
+        
 
-        <audio controls>
-            <source src="applause.mp3" type="audio/mpeg">
-        </audio>
+        <audio id="sound2" src="Impostor.mp3"></audio>
+        <button onclick="document.getElementById('sound2').play()">Impostor</button>
+        
 
+        <audio id="sound3" src="Toasty.mp3"></audio>
+       <button onclick="document.getElementById('sound3').play()">Toasty</button>
+    
+    <p>
+       <audio id="sound4" src="Wry.mp3"></audio>
+        <button onclick="document.getElementById('sound4').play()">WRY</button>
+        
+
+        <audio id="sound5" src="scary.mp3"></audio>
+        <button onclick="document.getElementById('sound5').play()">Scary</button>
+       
+
+        <audio id="sound6" src="Turn Down.mp3"></audio>
+       <button onclick="document.getElementById('sound6').play()">Turn Down</button>  
+    </p>
+    
+    <p><button onclick="pauseAudio()" type="button">Pause Audio</button></p>
     </div>
+    <script>
+        var a = document.getElementById("sound1"); 
+        var b = document.getElementById("sound2");
+        var c = document.getElementById("sound3");
+        var d = document.getElementById("sound4");
+        var e = document.getElementById("sound5");
+        var f = document.getElementById("sound6");
+ 
+
+        function pauseAudio() { 
+            a.pause();
+            b.pause();
+            c.pause();
+            d.pause();
+            e.pause();
+            f.pause(); 
+    } 
+    </script>
+    
     </body>
+</html>
