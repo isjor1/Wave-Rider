@@ -33,26 +33,11 @@
        <button onclick="document.getElementById('sound6').play()">Turn Down</button>  
     </p>
 
-    <p><button onclick="pauseAudio()" type="button">Pause Audio</button></p>
+    <p><button onclick="pauseAudio()" type="button">Pause Audio</button>
+    <button onclick="raiseVolume()" type="button"> + </button>
+    <button onclick="lowerVolume()" type="button"> - </button>
+    </p>
     </div>
-    <script>
-        var a = document.getElementById("sound1"); 
-        var b = document.getElementById("sound2");
-        var c = document.getElementById("sound3");
-        var d = document.getElementById("sound4");
-        var e = document.getElementById("sound5");
-        var f = document.getElementById("sound6");
- 
-
-        function pauseAudio() { 
-            a.pause();
-            b.pause();
-            c.pause();
-            d.pause();
-            e.pause();
-            f.pause(); 
-            ;
-        } 
-    </script>
+    <script src="pause.js"></script>
     </body>
 </html>
